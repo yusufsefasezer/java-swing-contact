@@ -1,5 +1,5 @@
 # Java Swing Contact
-A simple XML contact list application developed with Swing and Java.
+A simple contact list application developed with Swing and Java.
 
 This project developed with Java Generics, Java Collections, Java Object Serialization.
 
