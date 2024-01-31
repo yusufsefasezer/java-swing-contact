@@ -14,7 +14,7 @@ If you have maven execute the below command to run.
 
 ```
 mvn package
-java -jar target\java-swing-calculator.jar
+java -jar target\java-swing-contact.jar
 ```
 
 # License
