@@ -103,7 +103,7 @@ public class ContactController {
             messages.add("Invalid web address");
         }
 
-        if (messages.size() > 0) {
+        if (!messages.isEmpty()) {
             String newLine = System.getProperty("line.separator");
             String message = String.join(newLine, messages);
             JOptionPane.showMessageDialog(contactView, message);
@@ -149,7 +149,7 @@ public class ContactController {
         int selectedIndex = contactView.contactList.getSelectedIndex();
 
         if (selectedValue instanceof Contact selectedContact) {
-            contactService.delete((Long) selectedContact.getId());
+            contactService.delete((long) selectedIndex);
             contacts.remove(selectedIndex);
         }
 
