@@ -20,17 +20,17 @@ public class ContactView extends JFrame {
 
     public JList contactList = new JList();
 
-    public JTextField firstNameTextField = new JTextField(20);
-    public JTextField lastNameTextField = new JTextField(20);
-    public JTextField emailTextField = new JTextField(20);
-    public JTextField phoneNumberTextField = new JTextField(20);
-    public JTextField webAddressTextField = new JTextField(20);
-    public JTextArea addressTextArea = new JTextArea(5, 20);
-    public JTextArea notesTextArea = new JTextArea(5, 20);
+    public JTextField textFieldFirstName = new JTextField(20);
+    public JTextField textFieldLastName = new JTextField(20);
+    public JTextField textFieldEmail = new JTextField(20);
+    public JTextField textFieldPhoneNumber = new JTextField(20);
+    public JTextField textFieldWebAddress = new JTextField(20);
+    public JTextArea textAreaAddress = new JTextArea(5, 20);
+    public JTextArea textAreaNotes = new JTextArea(5, 20);
 
-    public JButton addButton = new JButton("Add");
-    public JButton updateButton = new JButton("Update");
-    public JButton removeButton = new JButton("Remove");
+    public JButton buttonAdd = new JButton("Add");
+    public JButton buttonUpdate = new JButton("Update");
+    public JButton buttonRemove = new JButton("Remove");
 
     public ContactView() {
         setTitle("Java Swing Contact");
@@ -60,30 +60,30 @@ public class ContactView extends JFrame {
 
         jPanelRight.add(new JLabel("First name: "));
         gbc.gridwidth = GridBagConstraints.REMAINDER;
-        jPanelRight.add(firstNameTextField, gbc);
+        jPanelRight.add(textFieldFirstName, gbc);
 
         jPanelRight.add(new JLabel("Last name: "));
-        jPanelRight.add(lastNameTextField, gbc);
+        jPanelRight.add(textFieldLastName, gbc);
 
         jPanelRight.add(new JLabel("Email: "));
-        jPanelRight.add(emailTextField, gbc);
+        jPanelRight.add(textFieldEmail, gbc);
 
         jPanelRight.add(new JLabel("Phone number: "));
-        jPanelRight.add(phoneNumberTextField, gbc);
+        jPanelRight.add(textFieldPhoneNumber, gbc);
 
         jPanelRight.add(new JLabel("Web address: "));
-        jPanelRight.add(webAddressTextField, gbc);
+        jPanelRight.add(textFieldWebAddress, gbc);
 
         jPanelRight.add(new JLabel("Address: "));
-        jPanelRight.add(new JScrollPane(addressTextArea), gbc);
+        jPanelRight.add(new JScrollPane(textAreaAddress), gbc);
 
         jPanelRight.add(new JLabel("Notes: "));
-        jPanelRight.add(new JScrollPane(notesTextArea), gbc);
+        jPanelRight.add(new JScrollPane(textAreaNotes), gbc);
 
         JPanel jPanelButton = new JPanel();
-        jPanelButton.add(addButton);
-        jPanelButton.add(updateButton);
-        jPanelButton.add(removeButton);
+        jPanelButton.add(buttonAdd);
+        jPanelButton.add(buttonUpdate);
+        jPanelButton.add(buttonRemove);
         jPanelRight.add(jPanelButton, gbc);
 
         gridBagConstraints.gridwidth = GridBagConstraints.REMAINDER;
