@@ -52,6 +52,7 @@ public class ContactView extends JFrame {
         jPanelLeft.add(jScrollPane, BorderLayout.CENTER);
         gridBagConstraints.fill = GridBagConstraints.BOTH;
         gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.weightx = 1.0;
         add(jPanelLeft, gridBagConstraints);
 
         GridBagConstraints gbc = new GridBagConstraints();
